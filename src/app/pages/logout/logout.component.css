@@ -1,0 +1,23 @@
+.slider{
+  width: 500px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+.slides{
+  width: calc(500px * 2);
+  animation: glisse 10s infinite;
+}
+.slide{
+  float: left;
+}
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
